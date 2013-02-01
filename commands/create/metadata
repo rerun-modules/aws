@@ -3,4 +3,4 @@
 # Thu Jan 31 22:15:29 CST 2013
 NAME=create
 DESCRIPTION="Create a virtual machine"
-OPTIONS="key aws-access-key aws-secret-key group instance-type ami-id zone hostname purpose"
+OPTIONS="key aws-access-key aws-secret-key group instance-type ami-id zone hostname purpose count"

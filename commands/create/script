@@ -10,7 +10,7 @@
 # and show its options.
 # 
 #/ command: aws:create: "Create a virtual machine"
-#/ usage: rerun aws:create  --key <>  --aws-access-key <>  --aws-secret-key <> [ --group <>]  --instance-type <m1.small>  --ami-id <>  --zone <us-east-1a>  --hostname <>  --purpose <> 
+#/ usage: rerun aws:create  --key <>  --aws-access-key <>  --aws-secret-key <> [ --group <>]  --instance-type <m1.small>  --ami-id <>  --zone <us-east-1a>  --hostname <>  --purpose <>  --count <1> 
 
 # Load common functions
 # ---------------------
@@ -47,7 +47,7 @@ set -o nounset -o pipefail
 # declared by `rerun` or by the option parser function.
 
 #/ rerun-variables: RERUN, RERUN_VERSION, RERUN_MODULES, RERUN_MODULE_DIR
-#/ option-variables: KEY AWS_ACCESS_KEY AWS_SECRET_KEY GROUP INSTANCE_TYPE AMI_ID ZONE HOSTNAME PURPOSE
+#/ option-variables: KEY AWS_ACCESS_KEY AWS_SECRET_KEY GROUP INSTANCE_TYPE AMI_ID ZONE HOSTNAME PURPOSE COUNT
 
 # The `rerun_options_parse` function processes the command line
 # arguments. Each accepted command line flag results in setting 
